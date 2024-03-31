@@ -1,41 +1,36 @@
-html{
-    background-color: rgb(0, 0, 0);
+html {
+    background-color: black;
+    background-attachment: fixed;
     font-family: "Inter", sans-serif;
-    color: rgb(255, 255, 255);
-}
-@media (min-width: 768px) {
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-      
-    li {
-        float: right;
-    }
-      
-    li a {
-        display: block;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+    color: white;
 }
 
+@media (min-width: 768px) {
+    .burger-menu{
+        display: none;
+    }
+}
   
   @media (max-width: 768px) {
-
+    li {
+        list-style-type: none;
+    }
     li a {
         display: block;
         text-align: center;
-        padding: 14px 16px;
         text-decoration: none;
+        color: white;
     }
     .burger-menu{
         float: right;
     }
-    .menu-items {
+    .logo {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    #menu-items {
         display: none;
     }
   }
