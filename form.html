@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>FansOnly | Payment</title>
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/reset.css">
@@ -12,10 +12,16 @@
    <header>
         <h1>SUBSCRIBE TO OUR FANS!</h1>
    </header>
-   <form class=" form--grid /action_page.php">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname" value="John">
-    <input type="submit" value="Submit">
+   <form class=" form--grid" class= "/action_page.php">
+    <input type="text" class="form--grid__cell cnum" name="fname" placeholder="CARD NUMBER">
+    <input type="text" class="form--grid__cell oname" name="oname" placeholder="OWNER NAME">
+    <input type="text" class="form--grid__cell subtype" name="subtype" placeholder="SUBSCRIPTION TYPE">
+    <input type="text" class="form--grid__cell exptime" name="exptime" placeholder="DATE OF EXPIRATION">
+    <input type="text" class="form--grid__cell cvv" name="cvv" placeholder="CVV">
+    <input type="submit" class="form--grid..cell submit--btn" value="CONFIRM PAYMENT">
   </form>
+  <div class="button--cancel">
+    <a href="/index.html">SUBSCRIBE</a>
+</div>
 </body>
 </html>

@@ -11,7 +11,59 @@ html {
 }
 h1{
     font-size: 1.5em;
-    padding-top: 4em;
+    padding-top: 3em;
+    padding-bottom: 2em;
     text-align: center;
     font-weight: bold;
 }
+::placeholder{
+    font-size: 0.5em;
+}
+.form--grid{
+    justify-content: center;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.form--grid__cell{
+    color: white;
+    width: 100%;
+}
+.cnum{
+    grid-column: span 2;
+    background: linear-gradient(87.07deg, rgba(195, 99, 238, 0.4) 0.02%, rgba(0, 0, 0, 0.4) 99.98%);
+}
+.oname{
+    grid-column: span 2;
+    background: linear-gradient(92.97deg, rgba(32, 158, 160, 0.3) 0.17%, rgba(0, 0, 0, 0.3) 99.83%);
+}
+.subtype{
+    grid-column: span 2;
+    background: linear-gradient(87.02deg, rgba(0, 117, 255, 0.3) 2.48%, rgba(0, 0, 0, 0.3) 97.52%);
+}
+.exptime{
+    grid-column: span 1;
+    background: linear-gradient(81.6deg, rgba(195, 99, 238, 0.3) 6.44%, rgba(0, 117, 255, 0.3) 93.56%);
+}
+.cvv{
+    grid-column: span 1;
+    background: linear-gradient(261.52deg, rgba(32, 158, 160, 0.3) 6.45%, rgba(0, 117, 255, 0.3) 93.55%);
+}
+.submit--btn{
+    font-size: 0.8em;
+    border-radius: 5px;
+    grid-column: span 2;
+    background: linear-gradient(93.31deg, #023B3C 0%, #6E1FCE 69.02%, #F087FF 100%);
+    color: white;
+}
+.button{
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.5em;
+    padding: 1em 2em;
+}
+
