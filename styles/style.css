@@ -25,7 +25,7 @@ li a {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: rgb(255, 16, 240)
+    color: white, rgb(255, 16, 240);
 }
 h1, h2{
     margin: 0;
@@ -91,4 +91,9 @@ button{
 .learn{
     background-color: black;
     color: white;
+}
+.stats{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
 }
