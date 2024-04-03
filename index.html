@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Title</title>
+    <title>FansOnly | Main Page</title>
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -33,21 +37,63 @@
                 LEARN MORE
             </button>
         </form>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card--content">
+                            <p class="card--title">Windfarm</p>
+                            <p class="card--text">Cool down with the power of our turbine fans - engineered for maximum airflow efficiency, delivering a refreshing breeze whenever you need it most.</p>
+                            <p class="card--price">Subscription type - 80€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card--content">
+                            <p class="card--title">Ceiling fans</p>
+                            <p class="card--text">Elevate your space with our ceiling fans - a perfect blend of style and functionality, ensuring comfort and sophistication in every room.</p>
+                            <p class="card--price">Subscription type - 60€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card--content">
+                            <p class="card--title">Table fans</p>
+                            <p class="card--text">Experience efficient cooling at your fingertips with our table fans – the perfect addition to any room for instant relief on warm days.</p>
+                            <p class="card--price">Subscription type - 40€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card--content">
+                            <p class="card--title">Hand fans</p>
+                            <p class="card--text">Stay effortlessly cool and stylish with our hand fans – the perfect accessory for any occasion.</p>
+                            <p class="card--price">Subscription type - 20€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="stats">
             <div class="stat">
-                <div class="stat--biger stat--pink">10 000+</div>
-                <div class="stat.--smaller stat--info">ACTIVE ACCOUNTS</div>
+                <div class="stat--bigger stat--pink">10 000+</div>
+                <div class="stat--smaller">ACTIVE ACCOUNTS</div>
             </div>
             <div class="stat">
-                <div class="stat--biger stat--blue">1500</div>
-                <div class="stat--info">FANS IN OUR DATABASE</div>
+                <div class="stat--bigger stat--blue">1500</div>
+                <div class="stat--smaller ">FANS IN OUR DATABASE</div>
             </div>
             <div class="stat">
-                <div class="stat--biger stat--green">9.5/10</div>
-                <div class="stat--info">AVERAGE RATING OF OUR SERVICE</div>
+                <div class="stat--bigger stat--green">9.5/10</div>
+                <div class="stat--smaller">AVERAGE RATING OF OUR SERVICE</div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
