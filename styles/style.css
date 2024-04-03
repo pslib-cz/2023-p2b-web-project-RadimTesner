@@ -29,6 +29,9 @@ h1{
     font-size: 2.5em;
     padding-top:2.4em;
 }
+h2{
+    font-size: 1.5em;
+}
 
 .main-grid{
     display: grid;
@@ -106,7 +109,7 @@ h1{
     transition: 0.3s;
     margin: auto;
     backdrop-filter: blur(50px);
-    padding: 20px;
+    padding: 0.7em;
     border-radius: 40px;
 }
 

@@ -24,9 +24,9 @@ h1{
     display: grid;
     gap: 1em;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 5em);
     margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-right: 1em;
 }
 .form--grid__cell{
     color: white;
@@ -53,17 +53,21 @@ h1{
     background: linear-gradient(261.52deg, rgba(32, 158, 160, 0.3) 6.45%, rgba(0, 117, 255, 0.3) 93.55%);
 }
 .submit--btn{
-    font-size: 0.8em;
+    margin-right: -0.5em;
+    font-size: 1.2em;
     border-radius: 5px;
     grid-column: span 2;
     background: linear-gradient(93.31deg, #023B3C 0%, #6E1FCE 69.02%, #F087FF 100%);
     color: white;
 }
-.button{
+.button--cancel{
+    color: white;
     display: block;
     text-align: center;
     border-radius: 15px;
     font-size: 1.5em;
     padding: 1em 2em;
 }
-
+a{
+    color: white;
+}
