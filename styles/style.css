@@ -3,34 +3,80 @@ html {
     background-attachment: fixed;
     font-family: "Inter", sans-serif;
     color: white;
+    background-image: url(/pictures/background_3.webp);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{ 
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+li a {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 16, 240)
+}
+.burger-menu{
+    float: right;
+    z-index: 3;
+    position: absolute;
+}
+.logo {
+    width: 100%;
+    display: block;
+}
+.menu-items {
+    display: none;
+}
+.menu-items.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6em;
+    gap: 3em;
+    background: linear-gradient(to bottom, rgba(91, 37, 180, 0.9), rgba(66, 91, 169, 0.9), rgba(44, 138, 159, 0.9));
+    z-index: 2;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
 }
 
-@media (min-width: 768px) {
-    .burger-menu{
-        display: none;
-    }
+.menu{
+    display: flex;
+    justify-content: space-between;
+    max-height: 10vh;
+    flex-direction: row-reverse;
 }
-  
-  @media (max-width: 768px) {
-    li {
-        list-style-type: none;
-    }
-    li a {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-    }
-    .burger-menu{
-        float: right;
-    }
-    .logo {
-        position: fixed;
-        top: 0;
-        right: 0;
-    }
-
-    #menu-items {
-        display: none;
-    }
-  }
+button{
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.5em;
+    padding: 1em 2em;
+    width: 70vw;
+}
+.subscribe{
+    background: linear-gradient(to right, rgba(240, 135, 255, 1), rgba(110, 31, 206, 1), rgba(110, 31, 206, 1));
+    color: white;
+}
+.learn{
+    background-color: black;
+    color: white;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
