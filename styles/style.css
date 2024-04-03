@@ -7,6 +7,7 @@ html {
     background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
+    font-size: 120%;
 }
 body{
     margin: 0;
@@ -26,6 +27,22 @@ li a {
     font-weight: bold;
     color: rgb(255, 16, 240)
 }
+h1, h2{
+    margin: 0;
+}
+h1{
+    padding-top:2.4em;
+}
+p{
+    margin: 0;
+}
+.main-grid{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
 .burger-menu{
     float: right;
     z-index: 3;
@@ -34,6 +51,12 @@ li a {
 .logo {
     width: 100%;
     display: block;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    max-height: 10vh;
+    flex-direction: row-reverse;
 }
 .menu-items {
     display: none;
@@ -51,12 +74,8 @@ li a {
     width: 100%;
     top: 0;
 }
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-    max-height: 10vh;
-    flex-direction: row-reverse;
+.description{
+    text-align: center;
 }
 button{
     display: block;
@@ -64,7 +83,6 @@ button{
     border-radius: 15px;
     font-size: 1.5em;
     padding: 1em 2em;
-    width: 70vw;
 }
 .subscribe{
     background: linear-gradient(to right, rgba(240, 135, 255, 1), rgba(110, 31, 206, 1), rgba(110, 31, 206, 1));
@@ -73,10 +91,4 @@ button{
 .learn{
     background-color: black;
     color: white;
-}
-.main-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
 }
