@@ -10,6 +10,10 @@ html {
     font-size: 120%;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 li {
     list-style-type: none;
 }
@@ -17,7 +21,6 @@ li a {
     font-size: 1.5em;
     display: block;
     text-align: center;
-    text-decoration: none;
     font-weight: bold;
     color: white;
 }
@@ -68,7 +71,7 @@ h1{
 .description{
     text-align: center;
 }
-button{
+.button{
     display: block;
     text-align: center;
     border-radius: 15px;
@@ -77,11 +80,10 @@ button{
 }
 .subscribe{
     background: linear-gradient(to right, rgba(240, 135, 255, 1), rgba(110, 31, 206, 1), rgba(110, 31, 206, 1));
-    color: white;
 }
 .learn{
-    background-color: black;
-    color: white;
+    background: linear-gradient(to left,rgb(21, 244, 238), rgb(10, 106, 103));
+
 }
 .swiper-container {
     width: 100%;
@@ -95,7 +97,6 @@ button{
     justify-content: center;
     align-items: center;
 }
-
 .container {
     width: 100%;
     border-radius: 5px;

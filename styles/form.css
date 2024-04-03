@@ -1,0 +1,17 @@
+html {
+    background-color: black;
+    background-attachment: fixed;
+    font-family: "Inter", sans-serif;
+    color: white;
+    background-image: url(/pictures/background_3.webp);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    font-size: 120%;
+}
+h1{
+    font-size: 1.5em;
+    padding-top: 4em;
+    text-align: center;
+    font-weight: bold;
+}
