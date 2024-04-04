@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FansOnly | Main Page</title>
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -32,14 +31,14 @@
             <a href="./form.html">SUBSCRIBE</a>
         </div>
         <div class="button learn">
-            <a href="#">LEARN MORE</a>
+            <a href="#swiper-container">LEARN MORE</a>
         </div>
-        <div class="swiper-container" id="swiper-container">
+        <div class="swiper" id="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="card">
                         <div class="card--content">
-                            <p class="card--title">Windfarm</p>
+                            <p class="card--title card--title__blue">Windfarm</p>
                             <p class="card--text">Cool down with the power of our turbine fans - engineered for maximum airflow efficiency, delivering a refreshing breeze whenever you need it most.</p>
                             <p class="card--price">Subscription type - 80€</p>
                         </div>
@@ -48,7 +47,7 @@
                 <div class="swiper-slide">
                     <div class="card">
                         <div class="card--content">
-                            <p class="card--title">Ceiling fans</p>
+                            <p class="card--title card--title__pink">Ceiling fans</p>
                             <p class="card--text">Elevate your space with our ceiling fans - a perfect blend of style and functionality, ensuring comfort and sophistication in every room.</p>
                             <p class="card--price">Subscription type - 60€</p>
                         </div>
@@ -57,7 +56,7 @@
                 <div class="swiper-slide">
                     <div class="card">
                         <div class="card--content">
-                            <p class="card--title">Table fans</p>
+                            <p class="card--title card--title__green">Table fans</p>
                             <p class="card--text">Experience efficient cooling at your fingertips with our table fans – the perfect addition to any room for instant relief on warm days.</p>
                             <p class="card--price">Subscription type - 40€</p>
                         </div>
@@ -66,13 +65,14 @@
                 <div class="swiper-slide">
                     <div class="card">
                         <div class="card--content">
-                            <p class="card--title">Hand fans</p>
+                            <p class="card--title card--title__blue">Hand fans</p>
                             <p class="card--text">Stay effortlessly cool and stylish with our hand fans – the perfect accessory for any occasion.</p>
                             <p class="card--price">Subscription type - 20€</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
         
         <div class="stats-grid">
