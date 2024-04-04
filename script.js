@@ -1,5 +1,5 @@
 function toggleMenu() {
-    var menuNavbar = document.querySelector('.menu-items');
+    var menuNavbar = document.querySelector('.menu--items');
     menuNavbar.classList.toggle('active');
 }
 var swiper = new Swiper('.swiper-container', {
