@@ -7,4 +7,13 @@ var swiper = new Swiper(".swiper", {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
+    breakpoints: {
+      840:{
+        slidesPerView: 4,
+        grid: {
+          rows: 2,
+        },
+      }
+    }
+
 });
