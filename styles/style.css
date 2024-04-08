@@ -95,8 +95,11 @@ h2{
     justify-content: center;
     align-items: center;
 }
+.swiper-grid-column>.swiper-wrapper{
+flex-direction: row;
+}
 .swiper-pagination{
-    --swiper-theme-color:rgb(103, 255, 123);
+    --swiper-theme-color:rgb(48, 255, 124);
 }
 .card {
     transition: 0.7s;
@@ -126,15 +129,15 @@ h2{
 }
 .card--price {
     font-size: 1.2rem;
-    text-align: center;
+    
     padding: 10px;
     border-bottom: 2px solid white;
 }
-
-.stats{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, 1fr);
+.stats-grid{
+    display: block;
+}
+.join{
+    display: none;
 }
 .stat--bigger{
     font-size: 4em;
@@ -144,26 +147,38 @@ h2{
     padding-left: 0.8em;
     color: rgb(198, 198, 198);
 }
-.stat--pink{
+.stat--first{
+    grid-column: 2;
+    grid-row: 1;
+}
+.stat--first__pink{
     background: linear-gradient(to bottom,rgb(255, 16, 240), rgb(84, 0, 78));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.stat--blue{
-    background: linear-gradient(to bottom,rgb(103, 255, 123), rgb(52, 111, 61));
+.stat--second{
+    grid-column: 2;
+    grid-row: 2;
+}
+.stat--second__blue{
+    background: linear-gradient(to bottom,rgb(21, 244, 238), rgb(10, 106, 103));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.stat--green{
-    background: linear-gradient(to bottom,rgb(21, 244, 238), rgb(10, 106, 103));
+.stat--third__green{
+    background:  linear-gradient(to bottom,rgb(103, 255, 123), rgb(52, 111, 61));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-left: 0.1em;
 }
-@media screen and (min-aspect-ratio: 1/1) {
+.stat--third{
+    grid-column: 2;
+    grid-row: 3;
+}
+@media screen and (min-width: 900px) {
     html{
         background-image: url(../pictures/background.webp);
         background-position: top;
@@ -172,11 +187,21 @@ h2{
     .burger--menu{
         display: none;
     }
-    .card{
-        
+    .card--content{
+        height: 6em;
     }
-    .swiper{
-        width: auto;
-        height: auto;
+    .stats-grid{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .join{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        font-size: 1.5em;
+        grid-column: 1;
+        grid-row: 2;
     }
 }
