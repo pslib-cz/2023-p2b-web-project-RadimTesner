@@ -99,7 +99,7 @@ h2{
 flex-direction: row;
 }
 .swiper-pagination{
-    --swiper-theme-color:rgb(48, 255, 124);
+    --swiper-theme-color:rgb(21, 244, 238);
 }
 .card {
     transition: 0.7s;
@@ -178,7 +178,7 @@ flex-direction: row;
     grid-column: 2;
     grid-row: 3;
 }
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
     html{
         background-image: url(../pictures/background.webp);
         background-position: top;
