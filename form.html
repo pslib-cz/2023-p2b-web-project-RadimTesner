@@ -12,10 +12,20 @@
     <header>
         <h1>SUBSCRIBE TO OUR FANS!</h1>
     </header>
-   <form class=" form--grid" class= "/action_page.php">
+    <div class="arrowdown">
+        <img src="./pictures/Expand_down_double.svg" alt="arrow" class="arrowdown--picture" href="#form--grid">
+    </div>
+   <form class="form--grid /action_page.php" id="form--grid">
         <input type="text" class="form--grid__cell cnum" name="fname" placeholder="CARD NUMBER">
         <input type="text" class="form--grid__cell oname" name="oname" placeholder="OWNER NAME">
-        <input type="text" class="form--grid__cell subtype" name="subtype" placeholder="SUBSCRIPTION TYPE">
+        <!-- <input type="text" class="form--grid__cell subtype" name="subtype" placeholder="SUBSCRIPTION TYPE"> -->
+        <select class="form--grid__cell subtype" name="subtype" placeholder="SUBSCRIPTION TYPE">
+            <option class="placeholder" value=""disabled selected>CHOOSE A SUBSCRIPTION TYPE</option>
+            <option value="windfarms">Windfarms - 80€</option>
+            <option value="ceiling-fans">Ceiling fans - 60€</option>
+            <option value="table-fans">Table fans - 40€</option>
+            <option value="hand-fans">Hand fans - 20€</option>
+        </select>
         <input type="text" class="form--grid__cell exptime" name="exptime" placeholder="DATE OF EXPIRATION">
         <input type="text" class="form--grid__cell cvv" name="cvv" placeholder="CVV">
         <input type="submit" class="form--grid..cell submit--btn" value="CONFIRM PAYMENT">

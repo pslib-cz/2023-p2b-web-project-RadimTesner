@@ -9,6 +9,16 @@ html {
     background-repeat:no-repeat;
     font-size: 16px;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.arrowdown{
+    display: none;
+}
 h1{
     font-size: 1.5em;
     padding-top: 3em;
@@ -18,7 +28,10 @@ h1{
 }
 ::placeholder{
     font-size: 0.8rem;
+    color: white;
 }
+
+
 .form--grid{
     justify-content: center;
     display: grid;
@@ -43,7 +56,13 @@ h1{
 .subtype{
     grid-column: span 2;
     background: linear-gradient(87.02deg, rgba(0, 117, 255, 0.3) 2.48%, rgba(0, 0, 0, 0.3) 97.52%);
+    font-size: 0.8rem;
 }
+.subtype option {
+    background-color: black; 
+    color: white;
+}
+
 .exptime{
     grid-column: span 1;
     background: linear-gradient(81.6deg, rgba(195, 99, 238, 0.3) 6.44%, rgba(0, 117, 255, 0.3) 93.56%);
@@ -70,4 +89,13 @@ h1{
 }
 a{
     color: white;
+}
+@media (min-width: 900px) {
+    .arrowdown{
+        display: block;
+        text-align: center;
+    }
+    .form--grid{
+        width: 50%;
+    }
 }

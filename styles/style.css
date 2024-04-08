@@ -180,6 +180,7 @@ flex-direction: row;
 }
 @media (min-width: 900px) {
     html{
+        font-size: 24px;
         background-image: url(../pictures/background.webp);
         background-position: top;
         background-attachment: scroll;
