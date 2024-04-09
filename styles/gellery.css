@@ -109,6 +109,9 @@ li a {
         background-position: top;
         background-attachment: scroll;
     }
+    h1{
+        padding-top:2em;
+    }
     .burger--menu{
         display: none;
     }
