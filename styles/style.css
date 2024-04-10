@@ -182,7 +182,25 @@ flex-direction: row;
     grid-row: 3;
 }
 .footer{
-    display: none;
+    display: grid;
+    font-size: 0.8em;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    padding: 0.5em;
+}
+.footer--content{
+    text-wrap: nowrap;
+}
+.footer--logos{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    gap: 0.9em;
 }
 @media (min-width: 900px) {
     html{
@@ -249,6 +267,17 @@ flex-direction: row;
         text-align: center;
         align-items: center;
         backdrop-filter: blur(10px);
-        padding: 1em;
+        padding: 0.5em;
+    }
+    .footer--content{
+        text-wrap: nowrap;
+    }
+    .footer--logos{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        gap: 0.9em;
     }
 }

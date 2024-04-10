@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?t6g4ok');
-  src:  url('fonts/icomoon.eot?t6g4ok#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?t6g4ok') format('truetype'),
-    url('fonts/icomoon.woff?t6g4ok') format('woff'),
-    url('fonts/icomoon.svg?t6g4ok#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?jk5w0e');
+  src:  url('fonts/icomoon.eot?jk5w0e#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jk5w0e') format('truetype'),
+    url('fonts/icomoon.woff?jk5w0e') format('woff'),
+    url('fonts/icomoon.svg?jk5w0e#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,12 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-copyright:before {
+  content: "\e901";
+}
 .icon-x:before {
   content: "\e900";
+  font-size: 2rem;
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
 }
 .icon-instagram:before {
   content: "\ea92";
+  font-size: 2rem;
 }
 .icon-linkedin:before {
   content: "\eac9";
+  font-size: 2rem;
 }
