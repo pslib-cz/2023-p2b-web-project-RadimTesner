@@ -34,20 +34,23 @@ li a {
     z-index: 3;
     position: fixed;
 }
-.burger--menu__logo {
+.burger--menu__logo{
     width: 100%;
     display: block;
 }
-.menu{
+.burger{
     display: flex;
     justify-content: space-between;
     max-height: 10vh;
     flex-direction: row-reverse;
 }
-.menu--items {
+.burger--items {
     display: none;
 }
-.menu--items.active {
+.navbar{
+    display: none;
+}
+.burger--items.active {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,8 +115,38 @@ li a {
     h1{
         padding-top:2em;
     }
-    .burger--menu{
+    .burger{
         display: none;
+    }
+    .navbar{
+        display: grid;
+        grid-template-rows: 5vw;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000000;
+        width: 100%;
+        height: 5vw;
+        justify-content: right; 
+        text-align: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    .navbar--logo{
+        grid-column: 1;
+        width: 80%;
+    }
+    .navbar--home{
+        grid-column: 2 span 2;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .navbar--subscribe{
+        grid-column: -4;
+    }
+    .navbar--ourfans{
+        grid-column: -3;
+    }
+    .navbar--subtypes{
+        grid-column: span -2;
     }
     .card{
         margin-bottom: 1em;
