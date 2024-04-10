@@ -181,6 +181,9 @@ flex-direction: row;
     grid-column: 2;
     grid-row: 3;
 }
+.footer{
+    display: none;
+}
 @media (min-width: 900px) {
     html{
         font-size: 24px;
@@ -237,5 +240,15 @@ flex-direction: row;
         font-size: 1.5em;
         grid-column: 1;
         grid-row: 2;
+    }
+    .footer{
+        display: grid;
+        font-size: 0.8em;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        padding: 1em;
     }
 }
